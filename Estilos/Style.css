@@ -1,4 +1,4 @@
-¨*{
+*{
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box; 
@@ -9,6 +9,11 @@
 	width: 100%;
 	margin: auto;
 	max-width: 1000px;
+
+	/*Flexbox*/
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 body{
@@ -17,15 +22,19 @@ body{
 
 header{
 	background-color: #2c3e50;
-	/*width: 100%;*/
+	width: 100%;
 	padding: 20px;
+
 	/*flexbox*/
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+
 }
+
+
 
 header .logo{
 	font-size: 40px;
@@ -45,4 +54,26 @@ header .logo a{
 	color: #FFFFFF;
 	padding: 5px;
 	border-radius: 5px;
+}
+
+header nav{
+	width: 50%;
+	
+	/*Flexbox*/
+	display: flex;
+	flex-wrap: wrap;
+}
+
+header nav a{
+	background-color: #C03928;
+	color: #ffffff;
+	padding: 10px;
+	text-decoration: none;
+	text-align: center;
+
+
+	/*Flexbox*/
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
 }
